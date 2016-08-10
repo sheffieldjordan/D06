@@ -10,18 +10,22 @@
 # alfalfa?"
 #   - write function to assist you
 #   - type favorite sentence(s) here:
-#       1:
-#       2:
-#       3:
+#       1: Ho, fleece lace!
+#       2: Chafe a face.
+#       3: A leaf fell. 
 ##############################################################################
 # Imports
 
 # Body
-
+def uses_only(word, letters):
+	for letter in word:
+		if letter not in letters:
+			return False
+		return True
 
 ##############################################################################
 def main():
-    pass  # Call your function(s) here.
+    print(uses_only('fleece lace', 'acefhlo'))
 
 if __name__ == '__main__':
     main()
